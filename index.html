@@ -35,10 +35,10 @@
               <div class="card-body text-center">
                 <i class="bi bi-calendar fs-1"></i>
                 <h3 class="card-title">Agrega aqui las tareas a realizar</h3>
-                <form class="row justify-content-center">
+                <form class="row justify-content-center miFormulario">
                   <div class="my-3">
                     <textarea
-                      id="consulta"
+                      id="inputTarea"
                       rows="3"
                       placeholder="Ej: Lavar los platos"
                       minlength="2"
@@ -51,7 +51,7 @@
                     <div class="col-12 col-md-6">
                       <button
                         class="btn btn-primary w-100 col-12 border border-light-subtle my-2"
-                        type="submit"
+                        type="button"
                       >
                         <i class="bi bi-upload"></i>
                         Cargar tarea
@@ -73,6 +73,9 @@
           </article>
         </div>
       </section>
+      <section>
+        <article><ul id="listaTareas" class="list-group mx-5"></ul></article>
+      </section>
     </main>
     <footer></footer>
     <script
@@ -80,6 +83,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

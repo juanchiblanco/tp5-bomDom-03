@@ -1,7 +1,7 @@
 const tareas = [];
 
 const inputTarea = document.getElementById("inputTarea");
-const btnAgregarTarea = document.querySelector(".btn-primary");
+const formulario = document.querySelector(".miFormulario");
 const listaTareas = document.getElementById("listaTareas");
 
 const agregarTarea = () => {
@@ -23,7 +23,8 @@ const agregarTarea = () => {
   });
 };
 
-btnAgregarTarea.addEventListener("click", () => {
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
   const texto = inputTarea.value;
 
   if (texto !== "") {

@@ -15,6 +15,8 @@ const agregarTarea = () => {
   btnEliminarTarea.classList.add("btn");
   btnEliminarTarea.classList.add("btn-danger");
   btnEliminarTarea.classList.add("ms-3");
+  btnEliminarTarea.classList.add("my-2");
+  btnEliminarTarea.classList.add("btn-sm");
 
   li.appendChild(btnEliminarTarea);
 
